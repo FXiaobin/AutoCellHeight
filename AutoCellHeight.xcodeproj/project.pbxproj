@@ -13,6 +13,9 @@
 		18C01EF91E7BDAFF007A8463 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C01EF71E7BDAFF007A8463 /* Main.storyboard */; };
 		18C01EFB1E7BDAFF007A8463 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18C01EFA1E7BDAFF007A8463 /* Assets.xcassets */; };
 		18C01EFE1E7BDAFF007A8463 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C01EFC1E7BDAFF007A8463 /* LaunchScreen.storyboard */; };
+		18C01F071E7BDCCD007A8463 /* AutoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C01F061E7BDCCD007A8463 /* AutoCell.m */; };
+		18C01F0A1E7BDCE1007A8463 /* AutoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C01F091E7BDCE1007A8463 /* AutoModel.m */; };
+		1F7B0B10D07430A8FBF1CD61 /* libPods-AutoCellHeight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8394F455AA482B82719185F /* libPods-AutoCellHeight.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,13 @@
 		18C01EFA1E7BDAFF007A8463 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18C01EFD1E7BDAFF007A8463 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18C01EFF1E7BDAFF007A8463 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18C01F051E7BDCCD007A8463 /* AutoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoCell.h; sourceTree = "<group>"; };
+		18C01F061E7BDCCD007A8463 /* AutoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoCell.m; sourceTree = "<group>"; };
+		18C01F081E7BDCE1007A8463 /* AutoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoModel.h; sourceTree = "<group>"; };
+		18C01F091E7BDCE1007A8463 /* AutoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoModel.m; sourceTree = "<group>"; };
+		4572E92FCFCE97E71D0B6086 /* Pods-AutoCellHeight.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoCellHeight.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AutoCellHeight/Pods-AutoCellHeight.debug.xcconfig"; sourceTree = "<group>"; };
+		64AF1E13AA3F5521BF5488CB /* Pods-AutoCellHeight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoCellHeight.release.xcconfig"; path = "Pods/Target Support Files/Pods-AutoCellHeight/Pods-AutoCellHeight.release.xcconfig"; sourceTree = "<group>"; };
+		B8394F455AA482B82719185F /* libPods-AutoCellHeight.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AutoCellHeight.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F7B0B10D07430A8FBF1CD61 /* libPods-AutoCellHeight.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +55,8 @@
 			children = (
 				18C01EED1E7BDAFF007A8463 /* AutoCellHeight */,
 				18C01EEC1E7BDAFF007A8463 /* Products */,
+				9EA84A31FECD968AFF3043AC /* Pods */,
+				2154FE861C785E4220B00C05 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +75,10 @@
 				18C01EF21E7BDAFF007A8463 /* AppDelegate.m */,
 				18C01EF41E7BDAFF007A8463 /* ViewController.h */,
 				18C01EF51E7BDAFF007A8463 /* ViewController.m */,
+				18C01F051E7BDCCD007A8463 /* AutoCell.h */,
+				18C01F061E7BDCCD007A8463 /* AutoCell.m */,
+				18C01F081E7BDCE1007A8463 /* AutoModel.h */,
+				18C01F091E7BDCE1007A8463 /* AutoModel.m */,
 				18C01EF71E7BDAFF007A8463 /* Main.storyboard */,
 				18C01EFA1E7BDAFF007A8463 /* Assets.xcassets */,
 				18C01EFC1E7BDAFF007A8463 /* LaunchScreen.storyboard */,
@@ -79,6 +96,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		2154FE861C785E4220B00C05 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B8394F455AA482B82719185F /* libPods-AutoCellHeight.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9EA84A31FECD968AFF3043AC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4572E92FCFCE97E71D0B6086 /* Pods-AutoCellHeight.debug.xcconfig */,
+				64AF1E13AA3F5521BF5488CB /* Pods-AutoCellHeight.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +120,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18C01F021E7BDAFF007A8463 /* Build configuration list for PBXNativeTarget "AutoCellHeight" */;
 			buildPhases = (
+				B7EF969A39ED7FAACADD5743 /* [CP] Check Pods Manifest.lock */,
 				18C01EE71E7BDAFF007A8463 /* Sources */,
 				18C01EE81E7BDAFF007A8463 /* Frameworks */,
 				18C01EE91E7BDAFF007A8463 /* Resources */,
+				A61755B81EE158F4A486AFB5 /* [CP] Embed Pods Frameworks */,
+				DCCDF7CC841A41DB64E7E98C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -145,6 +182,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A61755B81EE158F4A486AFB5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AutoCellHeight/Pods-AutoCellHeight-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7EF969A39ED7FAACADD5743 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DCCDF7CC841A41DB64E7E98C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AutoCellHeight/Pods-AutoCellHeight-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		18C01EE71E7BDAFF007A8463 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -152,6 +237,8 @@
 			files = (
 				18C01EF61E7BDAFF007A8463 /* ViewController.m in Sources */,
 				18C01EF31E7BDAFF007A8463 /* AppDelegate.m in Sources */,
+				18C01F071E7BDCCD007A8463 /* AutoCell.m in Sources */,
+				18C01F0A1E7BDCE1007A8463 /* AutoModel.m in Sources */,
 				18C01EF01E7BDAFF007A8463 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,6 +357,7 @@
 		};
 		18C01F031E7BDAFF007A8463 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4572E92FCFCE97E71D0B6086 /* Pods-AutoCellHeight.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AutoCellHeight/Info.plist;
@@ -281,6 +369,7 @@
 		};
 		18C01F041E7BDAFF007A8463 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64AF1E13AA3F5521BF5488CB /* Pods-AutoCellHeight.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AutoCellHeight/Info.plist;
@@ -309,6 +398,7 @@
 				18C01F041E7BDAFF007A8463 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
