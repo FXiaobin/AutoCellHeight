@@ -59,7 +59,7 @@
         make.height.mas_equalTo(desHeight);
     }];
     
-    [self.contentView updateConstraintsIfNeeded];
+    [self.contentView updateFocusIfNeeded];
 
 }
 
